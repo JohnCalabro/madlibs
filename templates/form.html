@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+</head>
+<body>
+    <h1>Welcome to Maaaaadliiiiibs!</h1>
+    <h2>{{prom}}</h2>
+    <form action="/story">
+        <h2>Make Your Story</h2>
+        {% for p in prom %}
+        <h2>{{p}}</h2>
+        <input type="text" name="{{p}}">
+        {%endfor%}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+<!-- {% for prompt in prompts %}
+<p>{{ prompt }}:
+  <input name="{{ prompt }}">
+</p>
+{% endfor %} -->
